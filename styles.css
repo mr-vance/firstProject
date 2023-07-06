@@ -45,6 +45,9 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
 }
+p{
+  color: #454545;
+}
 
 h1{
   justify-content: center;
@@ -109,6 +112,7 @@ input[type="checkbox"] {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  order: 1;
 }
 
 .menu-icon span {
@@ -119,8 +123,8 @@ input[type="checkbox"] {
   margin-bottom: 6px;
 }
 
-#menu-toggle:checked ~ .menu {
-  display: block;
+#menu-toggle:checked ~ ul.menu {
+  display: flex;
 }
 
 /***********************************************************
@@ -396,6 +400,7 @@ footer .circle {
 
   .menu-icon {
     display: flex;
+    order: 3;
   }
 
   .hero h1 {
@@ -438,9 +443,6 @@ footer .circle {
     margin-bottom: 10px;
   }
 
-  .menu-icon {
-    display: flex;
-  }
 
   #menu-toggle:checked ~ .menu {
     display: flex;
