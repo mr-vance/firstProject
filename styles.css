@@ -49,9 +49,11 @@ body {
 h1{
   justify-content: center;
   font-weight: normal;
+  color: #454545;
 }
 h3{
   font-weight: normal;
+  color: #454545;
 }
 
 img {
@@ -248,6 +250,7 @@ input[type="checkbox"] {
 .section1 h2 {
   font-size: 28px;
   font-weight: normal;
+  color: #454545;
 }
 
 .section1 p {
@@ -268,6 +271,7 @@ input[type="checkbox"] {
 .section2 h2 {
   font-size: 28px;
   font-weight: normal;
+  color: #454545;
 }
 
 .section2 .profile {
