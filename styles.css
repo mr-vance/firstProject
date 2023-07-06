@@ -14,6 +14,10 @@ body {
 
 h1{
   justify-content: center;
+  font-weight: normal;
+}
+h3{
+  font-weight: normal;
 }
 
 img {
@@ -93,8 +97,8 @@ input[type="checkbox"] {
 
 .hero h1 {
   font-size: 40px;
-  font-weight: bold;
   margin-bottom: 10px;
+  font-weight: normal;
 }
 
 .hero p {
@@ -126,11 +130,7 @@ input[type="checkbox"] {
 .feature {
   padding: 40px 20px;
   text-align: center;
-  border-radius: 40px;
-  margin-bottom: 1.5em;
-  margin-left: 1em;
-  margin-right: 1em;
-  background-color: #f5f5f5;
+  background-color: #94a3b8;
 }
 
 .feature-content {
@@ -192,17 +192,12 @@ input[type="checkbox"] {
 .section1 {
   padding: 40px 20px;
   text-align: center;
-  background-color: #f5f5f5;
-  border-radius: 40px;
-  margin-bottom: 1.5em;
-  margin-left: 1em;
-  margin-right: 1em;
+  background-color: #d4bfc8;
 }
 
 .section1 h2 {
   font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: normal;
 }
 
 .section1 p {
@@ -215,14 +210,11 @@ input[type="checkbox"] {
   padding: 40px 20px;
   text-align: center;
   background-color: #f5f5f5;
-  border-radius: 40px;
-  margin-left: 1em;
-  margin-right: 1em;
 }
 
 .section2 h2 {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
 }
 
@@ -241,7 +233,7 @@ input[type="checkbox"] {
 
 .profile-info h3 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 10px;
 }
 
@@ -277,7 +269,6 @@ footer {
   justify-content: space-between;
   padding: 20px;
   background-color: #f5f5f5;
-  border-radius: 10px;
   margin-top: 40px;
 }
 
