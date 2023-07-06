@@ -1,12 +1,46 @@
+/**
+ * Project Name: Assignment 1: HTML and CSS
+ * Project Url: https://mr-vance.github.io/firstAssignment
+ * Author: Vance Muchongo
+ * Author Url: https://vance-muchongo.web.app
+ * Initial Release: July 08, 2023
+ * Last Update: [TBC]
+ * 
+ */
+/* 
 
-/* Reset some default styles */
+
+====================
+  Table of Contents 
+====================
+
+1. General Style
+2. Navigation Bar and Menu
+3. Hero Section
+4. Feature Content Section
+5. Section 1
+6. Section 2
+7. Footer
+8. Media Queries 
+
+
+
+/***********************************************************
+  1. General Style 
+************************************************************/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General styles */
+/*Disable horizontal scroll*/
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -37,7 +71,11 @@ button {
   cursor: pointer;
 }
 
-/* Navigation bar */
+
+/***********************************************************
+  2. Navigation Bar and Menu
+************************************************************/
+
 nav {
   margin-top: 1em;
   margin-left: 1em;
@@ -79,9 +117,34 @@ input[type="checkbox"] {
   margin-bottom: 6px;
 }
 
-/* Hero section */
+input[type="checkbox"] {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #555555;
+  margin-bottom: 6px;
+}
+
+
+#menu-toggle:checked ~ .menu {
+  display: block;
+}
+
+/***********************************************************
+  3. Hero Section
+************************************************************/
+
 .hero {
-  /* background-size: cover; */
   padding: 80px 20px;
   text-align: center;
   display: flex;
@@ -126,7 +189,10 @@ input[type="checkbox"] {
   background-color: #3498db;
 }
 
-/* Feature content */
+/***********************************************************
+  4. Feature Content Section
+************************************************************/
+
 .feature {
   padding: 40px 20px;
   text-align: center;
@@ -137,14 +203,14 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 4px; /* Decreased the gap between cards */
+  gap: 4px; 
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 4px; /* Increased the gap between cards */
+  gap: 4px; 
 }
 
 .card {
@@ -159,7 +225,7 @@ input[type="checkbox"] {
 }
 
 .card img {
-  width: 50%; /* Ensure the image fills the entire width of the card */
+  width: 50%; 
   height: auto;
   margin-bottom: 20px;
 }
@@ -171,7 +237,7 @@ input[type="checkbox"] {
 
 .card p {
   font-size: 16px;
-  margin-bottom: 0; /* Removed the default margin-bottom for paragraphs */
+  margin-bottom: 0; 
 }
 
 @media (max-width: 767px) {
@@ -188,9 +254,10 @@ input[type="checkbox"] {
 }
 
 
+/***********************************************************
+  5. Section 1
+************************************************************/
 
-
-/* Section 1 */
 .section1 {
   padding: 40px 20px;
   text-align: center;
@@ -207,7 +274,10 @@ input[type="checkbox"] {
   margin-bottom: 40px;
 }
 
-/* Section 2 */
+/***********************************************************
+  6. Section 2
+************************************************************/
+
 .section2 {
   padding: 40px 20px;
   text-align: center;
@@ -220,28 +290,59 @@ input[type="checkbox"] {
   margin-bottom: 20px;
 }
 
-.profile {
+.section2 .profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
 }
 
-.profile-info {
+.section2 .profile-info {
   text-align: left;
   flex-grow: 1;
   margin-right: 20px;
 }
 
-.profile-info h3 {
+.section2 .profile-info h3 {
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 10px;
 }
 
-.profile-info p {
+.section2 .profile-info p {
   font-size: 16px;
   margin-bottom: 20px;
+}
+
+.section2 .slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+
+.section2 .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.section2 .slideshow .slide:nth-child(1) {
+  animation: testimonialSlideshow 10s infinite;
+}
+
+@keyframes testimonialSlideshow {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
 }
 
 .social-icons {
@@ -265,7 +366,10 @@ input[type="checkbox"] {
   background-image: url('images/profile.jpg');
 }
 
-/* Footer */
+/***********************************************************
+  7. Footer
+************************************************************/
+
 footer {
   display: flex;
   align-items: center;
@@ -295,8 +399,13 @@ footer .circle {
   background-color: #f5f5f5;
 }
 
-/* Media Queries */
+
+/***********************************************************
+  8. Media Queries 
+************************************************************/
+
 @media only screen and (max-width: 768px) {
+
   nav ul {
     display: none;
   }
@@ -312,7 +421,6 @@ footer .circle {
   .hero p {
     font-size: 14px;
   }
-
 
   .profile {
     flex-direction: column;
@@ -330,45 +438,6 @@ footer .circle {
   footer ul {
     display: none;
   }
-}
-
-/*Disable horizontal scroll*/
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Reset some default styles */
-/* ... */
-
-/* Navigation bar */
-/* ... */
-
-input[type="checkbox"] {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-icon span {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: #555555;
-  margin-bottom: 6px;
-}
-
-
-#menu-toggle:checked ~ .menu {
-  display: block;
-}
-
-@media only screen and (max-width: 768px) {
-  /* ... */
 
   .social-icons {
     display:inline;
@@ -393,5 +462,4 @@ input[type="checkbox"] {
     display: flex;
   }
 
-  /* ... */
 }
