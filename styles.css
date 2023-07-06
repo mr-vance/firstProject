@@ -1,5 +1,5 @@
 /**
- * Project Name: Assignment 1: HTML and CSS
+ * Project Name: Assignment 1 - HTML and CSS
  * Project Url: https://mr-vance.github.io/firstAssignment
  * Author: Vance Muchongo
  * Author Url: https://vance-muchongo.web.app
@@ -116,25 +116,6 @@ input[type="checkbox"] {
   background-color: #555555;
   margin-bottom: 6px;
 }
-
-input[type="checkbox"] {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-icon span {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: #555555;
-  margin-bottom: 6px;
-}
-
 
 #menu-toggle:checked ~ .menu {
   display: block;
@@ -287,7 +268,6 @@ input[type="checkbox"] {
 .section2 h2 {
   font-size: 28px;
   font-weight: normal;
-  margin-bottom: 20px;
 }
 
 .section2 .profile {
@@ -357,7 +337,7 @@ input[type="checkbox"] {
   background-color: #f5f5f5;
 }
 
-.profile-image {
+.section2 .profile-image {
   flex-shrink: 0;
   width: 200px;
   height: 200px;
