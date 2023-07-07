@@ -81,16 +81,14 @@ button {
   2. Navigation Bar and Menu
 ************************************************************/
 
+
 nav {
   margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  border-radius: 40px;
-  position: relative; /* Add this */
+  position: relative;
 }
 
 nav img {
@@ -122,8 +120,8 @@ input[type="checkbox"] {
 }
 
 .menu {
-  display: flex; /* Add this */
-  flex-direction: row; /* Add this */
+  display: flex; 
+  flex-direction: row; 
 }
 
 .menu li {
@@ -131,11 +129,11 @@ input[type="checkbox"] {
 }
 
 #menu-toggle:checked ~ .menu {
-  display: none; /* Change this */
+  display: none; 
 }
 
 #menu-toggle:checked ~ ul.menu {
-  display: flex; /* Add this */
+  display: flex; 
 }
 
 
@@ -483,13 +481,32 @@ footer .circle {
   nav ul {
     display: flex;
     position: absolute;
-    top: 100%; /* Add this */
-    left: 0; /* Add this */
-    background-color: #ffffff; /* Add this */
-    padding: 10px; /* Add this */
-    flex-direction: column; /* Add this */
-    width: 100%; /* Add this */
+    top: 100%; 
+    left: 0; 
+    background-color: #ffffff; 
+    padding: 10px; 
+    flex-direction: column; 
+    width: 100%; 
   }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .menu-icon {
+    order: 3;
+  }
+
+  .primary-button {
+    order: 2;
+  }
+  
 
 }
 
