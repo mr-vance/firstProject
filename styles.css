@@ -274,16 +274,33 @@ input[type="checkbox"] {
 }
 
 /***********************************************************
-  6. Section 2
+  6. Section 2: Testimonials
 ************************************************************/
 
-.CSSgal {
+.section2 {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #d1d4e6;
+}
+
+.section2 h2 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #454545;
+}
+
+.section2 p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.testimonials {
 	position: relative;
 	overflow: hidden;
 	height: 100%; 
 }
 
-.CSSgal .slider {
+.testimonials .slider {
 	height: 100%;
 	white-space: nowrap;
 	font-size: 0;
@@ -291,7 +308,7 @@ input[type="checkbox"] {
 }
 
 
-.CSSgal .slider > * {
+.testimonials .slider > * {
 	font-size: 1rem;
 	display: inline-block;
 	white-space: normal;
@@ -303,7 +320,7 @@ input[type="checkbox"] {
 }
 
 
-.CSSgal .prevNext {
+.testimonials .prevNext {
 	position: absolute;
 	z-index: 1;
 	top: 50%;
@@ -311,11 +328,11 @@ input[type="checkbox"] {
 	height: 0;
 }
 
-.CSSgal .prevNext > div+div {
+.testimonials .prevNext > div+div {
 	visibility: hidden; 
 }
 
-.CSSgal .prevNext a {
+.testimonials .prevNext a {
 	background: #f87171;
 	position: absolute;
 	width:       60px;
@@ -329,16 +346,16 @@ input[type="checkbox"] {
 					transform: translateY(-50%);
 	left: 0;
 }
-.CSSgal .prevNext a:hover {
+.testimonials .prevNext a:hover {
 	opacity: 1;
 }
-.CSSgal .prevNext a+a {
+.testimonials .prevNext a+a {
 	left: auto;
 	right: 0;
 }
 
 
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.testimonials >s:target ~ .prevNext >* {      visibility: hidden;}
 #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
 #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
 #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
@@ -352,14 +369,8 @@ input[type="checkbox"] {
 #s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
 
 
-.CSSgal .slider h3 {
-  margin-top: 1em;
-	letter-spacing: -0.06em;
-	word-spacing: 0.2em;
-	font-size: 3em;
-}
 
-.CSSgal a {
+.testimonials a {
 	border-radius: 50%;
 	margin: 0 3px;
 	color: rgba(0,0,0,0.8);
@@ -445,7 +456,6 @@ footer .circle {
   .hero p {
     font-size: 14px;
   }
-
 
   .testimonial-image {
     text-align: center;
