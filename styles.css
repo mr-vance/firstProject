@@ -441,6 +441,11 @@ footer .circle {
     text-align: center;
     flex-direction: column;
   }
+  
+  .testimonial-image {
+    text-align: center;
+    margin-top: 20px;
+  }
 
   footer ul {
     display: none;
