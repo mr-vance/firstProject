@@ -123,9 +123,6 @@ input[type="checkbox"] {
   margin-bottom: 6px;
 }
 
-#menu-toggle:checked ~ ul.menu {
-  display: flex;
-}
 
 /***********************************************************
   3. Hero Section
