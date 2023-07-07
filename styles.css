@@ -97,16 +97,6 @@ nav img {
   max-height: 3em;
 }
 
-nav ul {
-  display: flex;
-  position: absolute;
-  top: 100%; /* Add this */
-  left: 0; /* Add this */
-  background-color: #ffffff; /* Add this */
-  padding: 10px; /* Add this */
-  flex-direction: column; /* Add this */
-  width: 100%; /* Add this */
-}
 
 nav ul li {
   margin-left: 15px;
@@ -488,6 +478,17 @@ footer .circle {
 
   #menu-toggle:checked ~ .menu {
     display: flex;
+  }
+
+  nav ul {
+    display: flex;
+    position: absolute;
+    top: 100%; /* Add this */
+    left: 0; /* Add this */
+    background-color: #ffffff; /* Add this */
+    padding: 10px; /* Add this */
+    flex-direction: column; /* Add this */
+    width: 100%; /* Add this */
   }
 
 }
