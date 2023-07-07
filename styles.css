@@ -397,10 +397,16 @@ input[type="checkbox"] {
 
 .social-icons {
   margin-top: 10px;
+
 }
 
 .social-icon {
   margin-right: 5px;
+}
+
+.social-icon img{
+  width: 30px;
+  height: auto;
 }
 
 
@@ -429,21 +435,6 @@ input[type="checkbox"] {
   flex-wrap: wrap;
 }
 
-.social-icon__item,
-.menu__item {
-  list-style: none;
-}
-
-.social-icon__link {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-.social-icon__link:hover {
-  transform: translateY(-10px);
-}
 
 .menu__link {
   font-size: 1.2rem;
@@ -617,8 +608,11 @@ input[type="checkbox"] {
 
 /**
 * 1. Ocean Footer: https://codepen.io/alvarotrigo/pen/GRxxWdQ
-* 2.
-* 3.
-* 4.
+* 2. Facebook icon created by
+     Hight Quality Icons: https://www.flaticon.com/free-icons/facebook
+* 3. Instagram logo icons created by
+     Laisa Islam Ani: https://www.flaticon.com/free-icons/instagram-logo
+* 4. Twitter logo icons created by
+     Md Tanvirul Haque: https://www.flaticon.com/free-icons/twitter-logo
 * 5.
 */
