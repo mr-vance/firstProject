@@ -36,7 +36,6 @@
     100%  {color: var(--color-1)}
   }
   
-  /* Here are just some visual styles. 🖌 */
   
   .container {
     display: grid;
@@ -44,9 +43,3 @@
     text-align: center;
   }
   
-  /* .title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 8.5vw;
-    text-transform: uppercase;
-  } */
