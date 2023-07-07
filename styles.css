@@ -429,6 +429,8 @@ footer .circle {
   }
 
   .social-icons {
+    justify-content: center;
+    margin-top: 10px;
     display:inline;
   }
 
@@ -529,6 +531,7 @@ footer .circle {
 
 
 .CSSgal .slider h3 {
+  margin-top: 1em;
 	letter-spacing: -0.06em;
 	word-spacing: 0.2em;
 	font-size: 3em;
@@ -559,7 +562,7 @@ footer .circle {
 }
 
 .social-icons {
-  text-align: center;
+  justify-content: center;
   margin-top: 10px;
 }
 
