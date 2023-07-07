@@ -281,6 +281,7 @@ input[type="checkbox"] {
   padding: 40px 20px;
   text-align: center;
   background-color: #bab7b1;
+  padding-bottom: 3em;
 }
 
 .section2 h2 {
@@ -419,8 +420,7 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
-.social-icon,
-.menu {
+.footer-menu {
   position: relative;
   display: flex;
   justify-content: center;
