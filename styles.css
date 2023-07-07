@@ -449,3 +449,121 @@ footer .circle {
   }
 
 }
+
+/* Testimonial Slider */
+
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 100%; 
+}
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; 
+}
+
+.CSSgal .prevNext a {
+	background: #f87171;
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px; 
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+}
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+
+
+.CSSgal .slider h3 {
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+.testimonial-content {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonial-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin-right: 5px;
+}
+
