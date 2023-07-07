@@ -435,13 +435,7 @@ footer .circle {
     font-size: 14px;
   }
 
-  .testimonial-content {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    flex-direction: column;
-  }
-  
+
   .testimonial-image {
     text-align: center;
     margin-top: 20px;
@@ -452,9 +446,9 @@ footer .circle {
   }
 
   .social-icons {
-    
     margin-top: 10px;
-    display:inline;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .menu {
