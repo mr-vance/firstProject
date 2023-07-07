@@ -1,5 +1,10 @@
 # Assignment 1: HTML & CSS
 
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]()
+[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)]()
+[![forthebadge](https://forthebadge.com/images/badges/made-with-out-pants.svg)]()
+
+
 <p align="center">
   <img src="https://i.imgur.com/gjSlBfx.gif" width="150" height="150">
 </p>
