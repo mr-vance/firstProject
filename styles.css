@@ -435,17 +435,11 @@ footer .circle {
     font-size: 14px;
   }
 
-  .profile {
-    flex-direction: column;
-  }
-
-  .profile-info {
+  .testimonial-content {
+    max-width: 400px;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .profile-image {
-    margin-top: 20px;
+    flex-direction: column;
   }
 
   footer ul {
@@ -453,12 +447,10 @@ footer .circle {
   }
 
   .social-icons {
-    justify-content: inherit;
+    
     margin-top: 10px;
     display:inline;
   }
-
-
 
   .menu {
     display: none;
