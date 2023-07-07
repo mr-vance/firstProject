@@ -82,7 +82,6 @@ button {
   2. Navigation Bar and Menu
 ************************************************************/
 
-
 nav {
   display: flex;
   align-items: center;
@@ -94,7 +93,6 @@ nav {
 nav img {
   max-height: 3em;
 }
-
 
 nav ul li {
   margin-left: 15px;
@@ -108,20 +106,19 @@ input[type="checkbox"] {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  order: 1;
 }
 
 .menu-icon span {
   display: block;
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: #555555;
-  margin-bottom: 6px;
+  margin-bottom: 4.5px;
 }
 
 .menu {
-  display: flex; 
-  flex-direction: row; 
+  display: flex;
+  flex-direction: row;
 }
 
 .menu li {
@@ -129,13 +126,12 @@ input[type="checkbox"] {
 }
 
 #menu-toggle:checked ~ .menu {
-  display: none; 
+  display: none;
 }
 
 #menu-toggle:checked ~ ul.menu {
-  display: flex; 
+  display: flex;
 }
-
 
 
 /***********************************************************
@@ -522,6 +518,12 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 768px) {
 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   nav ul {
     display: none;
   }
@@ -580,12 +582,7 @@ input[type="checkbox"] {
     flex-direction: column; 
     width: 100%; 
   }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
 
   .logo {
     order: 1;
@@ -599,7 +596,6 @@ input[type="checkbox"] {
     order: 2;
   }
   
-
 }
 
 /***********************************************************
