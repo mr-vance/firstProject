@@ -90,6 +90,7 @@ nav {
   justify-content: space-between;
   padding: 20px;
   border-radius: 40px;
+  position: relative; /* Add this */
 }
 
 nav img {
@@ -98,6 +99,13 @@ nav img {
 
 nav ul {
   display: flex;
+  position: absolute;
+  top: 100%; /* Add this */
+  left: 0; /* Add this */
+  background-color: #ffffff; /* Add this */
+  padding: 10px; /* Add this */
+  flex-direction: column; /* Add this */
+  width: 100%; /* Add this */
 }
 
 nav ul li {
@@ -122,6 +130,24 @@ input[type="checkbox"] {
   background-color: #555555;
   margin-bottom: 6px;
 }
+
+.menu {
+  display: flex; /* Add this */
+  flex-direction: row; /* Add this */
+}
+
+.menu li {
+  margin-left: 15px;
+}
+
+#menu-toggle:checked ~ .menu {
+  display: none; /* Change this */
+}
+
+#menu-toggle:checked ~ ul.menu {
+  display: flex; /* Add this */
+}
+
 
 
 /***********************************************************
