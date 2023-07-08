@@ -42,10 +42,12 @@
 /**
  * Disable horizontal scroll by setting the maximum width to 100%
  * and hiding the overflow in the x-direction.
+ * Smooth scrolling animation
  */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /**
