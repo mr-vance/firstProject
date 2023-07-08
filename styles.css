@@ -30,59 +30,99 @@
   1. General Style 
 ************************************************************/
 
-* {
+/**
+ * Reset margins and paddings to 0, and use border-box for box-sizing.
+ */
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Disable horizontal scroll*/
+/**
+ * Disable horizontal scroll by setting the maximum width to 100%
+ * and hiding the overflow in the x-direction.
+ */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
+/**
+ * Set the font family to Inter and the font size to 16 pixels for the entire body.
+ */
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
 }
+
+/**
+ * Set the text color to #454545 for paragraphs.
+ */
 p{
   color: #454545;
 }
 
+/**
+ * Center the text alignment and set the font weight to normal for h1 headings.
+ * Set the text color to #454545.
+ */
 h1{
   justify-content: center;
   font-weight: normal;
   color: #454545;
 }
+
+/**
+ * Set the font weight to normal and the text color to #454545 for h3 headings.
+ */
 h3{
   font-weight: normal;
   color: #454545;
 }
 
+/**
+ * Set the maximum width to 100% for images.
+ */
 img {
   max-width: 100%;
 }
 
+/**
+ * Remove the default list-style and bullet points for unordered lists.
+ */
 ul {
   list-style: none;
 }
 
+/**
+ * Remove the underline and set the text color to inherit for links.
+ */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/**
+ * Set the cursor to a pointer for buttons.
+ */
 button {
   cursor: pointer;
 }
+
 
 
 /***********************************************************
   2. Navigation Bar and Menu
 ************************************************************/
 
-nav {
+/**
+ * Display the navigation bar as a flex container,
+ * align the items vertically centered, and distribute
+ * the space evenly between them. Apply padding of 20px
+ * and set the position to relative.
+ */
+ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,24 +130,42 @@ nav {
   position: relative;
 }
 
+/**
+ * Set the maximum height to 3em for the navigation bar image.
+ */
 nav img {
   max-height: 3em;
 }
 
+/**
+ * Apply a left margin of 15px for each list item in the navigation menu.
+ */
 nav ul li {
   margin-left: 15px;
 }
 
+/**
+ * Hide the checkbox input element.
+ */
 input[type="checkbox"] {
   display: none;
 }
 
+/**
+ * Hide the menu icon by default, display it as a column,
+ * and set the cursor to a pointer.
+ */
 .menu-icon {
   display: none;
   flex-direction: column;
   cursor: pointer;
 }
 
+/**
+ * Display each span element of the menu icon as a block,
+ * with a width of 30px, a height of 2px, and a background color of #555555.
+ * Apply a bottom margin of 4.5px to create spacing between the spans.
+ */
 .menu-icon span {
   display: block;
   width: 30px;
@@ -116,19 +174,31 @@ input[type="checkbox"] {
   margin-bottom: 4.5px;
 }
 
+/**
+ * Display the menu as a flex container with a row direction.
+ */
 .menu {
   display: flex;
   flex-direction: row;
 }
 
+/**
+ * Apply a left margin of 15px for each list item in the menu.
+ */
 .menu li {
   margin-left: 15px;
 }
 
+/**
+ * Hide the menu when the menu toggle checkbox is checked.
+ */
 #menu-toggle:checked ~ .menu {
   display: none;
 }
 
+/**
+ * Display the menu when the menu toggle checkbox is checked.
+ */
 #menu-toggle:checked ~ ul.menu {
   display: flex;
 }
@@ -138,7 +208,13 @@ input[type="checkbox"] {
   3. Hero Section
 ************************************************************/
 
-.hero {
+/**
+ * Apply padding of 80px on the top and bottom, and 20px on the left and right
+ * for the hero section. Set the text alignment to center, display it as a flex container,
+ * and make it inherit the width and height.
+ * Set the background color to #ffead8.
+ */
+ .hero {
   padding: 80px 20px;
   text-align: center;
   display: flex;
@@ -147,27 +223,44 @@ input[type="checkbox"] {
   background-color: #ffead8;
 }
 
+/**
+ * Apply a margin bottom of 30px and make the hero content flex to occupy available space.
+ */
 .hero-content {
   margin-bottom: 30px;
   flex: 1;
 }
 
+/**
+ * Set the font size to 40px, apply a margin bottom of 10px, and set the font weight to normal
+ * for the h1 heading within the hero section.
+ */
 .hero h1 {
   font-size: 40px;
   margin-bottom: 10px;
   font-weight: normal;
 }
 
+/**
+ * Set the font size to 18px and apply a margin bottom of 30px for paragraphs within the hero section.
+ */
 .hero p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
+/**
+ * Display the buttons as a flex container and justify the content to the center.
+ */
 .buttons {
   display: flex;
   justify-content: center;
 }
 
+/**
+ * Apply styling for the primary and secondary buttons.
+ * Set the padding, margin, border, border radius, font size, text color, and background color.
+ */
 .primary-button,
 .secondary-button {
   padding: 7px 27px;
@@ -179,20 +272,101 @@ input[type="checkbox"] {
   background-color: #f87171;
 }
 
+/**
+ * Set the background color to #3498db for the secondary button.
+ */
 .secondary-button {
   background-color: #3498db;
 }
+
+/**
+ * Apply animation styles for the title words.
+ * Define custom color variables and create a color animation that cycles through them.
+ */
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+/**
+ * Define color variables for the first title word.
+ */
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+/**
+ * Define color variables for the second title word.
+ */
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+/**
+ * Define color variables for the third title word.
+ */
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+/**
+ * Define color variables for the fourth title word.
+ */
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+/**
+ * Define keyframe animation for the color animation.
+ * Specify keyframe percentages and assign the color variables accordingly.
+ */
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/**
+ * Display the container as a grid, place the items in the center,
+ * and set the text alignment to center.
+ */
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+}
+
 
 /***********************************************************
   4. Feature Content Section
 ************************************************************/
 
-.feature {
+/**
+ * Apply padding of 40px on the top and bottom, and 20px on the left and right
+ * for the feature section. Set the text alignment to center and
+ * set the background color to #94a3b8.
+ */
+ .feature {
   padding: 40px 20px;
   text-align: center;
   background-color: #94a3b8;
 }
 
+/**
+ * Display the feature content as a flex container with wrapping enabled.
+ * Justify the content to space between and set the gap between items to 4px.
+ */
 .feature-content {
   display: flex;
   flex-wrap: wrap;
@@ -200,6 +374,10 @@ input[type="checkbox"] {
   gap: 4px; 
 }
 
+/**
+ * Display the cards as a flex container with wrapping enabled.
+ * Justify the content to space between and set the gap between items to 4px.
+ */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -207,6 +385,12 @@ input[type="checkbox"] {
   gap: 4px; 
 }
 
+/**
+ * Style for individual cards.
+ * Set the flex basis and max width to occupy 25% of the container width minus 20px.
+ * Apply padding of 20px, a border radius of 10px, a background color of #f5f5f5,
+ * a box-sizing of border-box, a box shadow, and a border of 1px solid #ccc.
+ */
 .card {
   flex-basis: calc(25% - 20px);
   max-width: calc(25% - 20px);
@@ -218,29 +402,50 @@ input[type="checkbox"] {
   border: 1px solid #ccc;
 }
 
+/**
+ * Set the width to 50% and height to auto for images within cards.
+ * Apply a margin bottom of 20px.
+ */
 .card img {
   width: 50%; 
   height: auto;
   margin-bottom: 20px;
 }
 
+/**
+ * Set the font size to 24px and apply a margin bottom of 10px for h3 headings within cards.
+ */
 .card h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
+/**
+ * Set the font size to 16px and remove the margin bottom for paragraphs within cards.
+ */
 .card p {
   font-size: 16px;
   margin-bottom: 0; 
 }
 
+/**
+ * Media query for screens with a maximum width of 767px.
+ * Update the layout for smaller screens.
+ */
 @media (max-width: 767px) {
+  /**
+   * Change the flex direction of cards to column and align the items to the center.
+   * Set the gap between items to 10px.
+   */
   .cards {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 
+  /**
+   * Set the flex basis and max width of cards to 100% for smaller screens.
+   */
   .card {
     flex-basis: 100%;
     max-width: 100%;
@@ -249,21 +454,33 @@ input[type="checkbox"] {
 
 
 /***********************************************************
-  5. Section 1
+  5. Section 1: Projects
 ************************************************************/
 
-.section1 {
+/**
+ * Apply padding of 40px on the top and bottom, and 20px on the left and right
+ * for section 1. Set the text alignment to center and
+ * set the background color to #d4bfc8.
+ */
+ .section1 {
   padding: 40px 20px;
   text-align: center;
   background-color: #d4bfc8;
 }
 
+/**
+ * Set the font size to 28px, font weight to normal, and text color to #454545
+ * for the h2 heading within section 1.
+ */
 .section1 h2 {
   font-size: 28px;
   font-weight: normal;
   color: #454545;
 }
 
+/**
+ * Set the font size to 16px and apply a margin bottom of 40px for paragraphs within section 1.
+ */
 .section1 p {
   font-size: 16px;
   margin-bottom: 40px;
@@ -273,30 +490,49 @@ input[type="checkbox"] {
   6. Section 2: Testimonials
 ************************************************************/
 
-.section2 {
+/**
+ * Apply padding of 40px on the top and bottom, and 20px on the left and right
+ * for section 2. Set the text alignment to center and
+ * set the background color to #bab7b1. Additionally, apply
+ * padding of 3em to the bottom of the section.
+ */
+ .section2 {
   padding: 40px 20px;
   text-align: center;
   background-color: #bab7b1;
   padding-bottom: 3em;
 }
 
+/**
+ * Set the font size to 28px, font weight to normal, and text color to #454545
+ * for the h2 heading within section 2.
+ */
 .section2 h2 {
   font-size: 28px;
   font-weight: normal;
   color: #454545;
 }
 
+/**
+ * Set the font size to 16px and apply a margin bottom of 40px for paragraphs within section 2.
+ */
 .section2 p {
   font-size: 16px;
   margin-bottom: 40px;
 }
 
+/**
+ * Style for the testimonials section.
+ */
 .testimonials {
 	position: relative;
 	overflow: hidden;
 	height: 100%; 
 }
 
+/**
+ * Style for the slider within the testimonials section.
+ */
 .testimonials .slider {
 	height: 100%;
 	white-space: nowrap;
@@ -304,7 +540,9 @@ input[type="checkbox"] {
 	transition: 0.8s;
 }
 
-
+/**
+ * Style for the individual slides within the slider.
+ */
 .testimonials .slider > * {
 	font-size: 1rem;
 	display: inline-block;
@@ -316,7 +554,9 @@ input[type="checkbox"] {
 	background-size: cover;
 }
 
-
+/**
+ * Style for the previous and next navigation buttons.
+ */
 .testimonials .prevNext {
 	position: absolute;
 	z-index: 1;
@@ -329,44 +569,75 @@ input[type="checkbox"] {
 	visibility: hidden; 
 }
 
-.testimonials .prevNext a {
-	background: #f87171;
-	position: absolute;
-	width:       60px;
-	height:      60px;
-	line-height: 60px; 
-	text-align: center;
-	opacity: 0.7;
-	-webkit-transition: 0.3s;
-					transition: 0.3s;
-	-webkit-transform: translateY(-50%);
-					transform: translateY(-50%);
-	left: 0;
+/**
+ * Style for the previous and next navigation buttons.
+ * Set the background color to #f87171, position as absolute,
+ * width and height to 60px, line height to 60px, text alignment to center,
+ * opacity to 0.7, transition duration to 0.3s, vertical position to top,
+ * and horizontal position to the left.
+ */
+ .testimonials .prevNext a {
+  background: #f87171;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px; 
+  text-align: center;
+  opacity: 0.7;
+  transition: 0.3s;
+  transform: translateY(-50%);
+  left: 0;
 }
+
+
 .testimonials .prevNext a:hover {
 	opacity: 1;
 }
+
 .testimonials .prevNext a+a {
 	left: auto;
 	right: 0;
 }
 
+/**
+ * Define the slider position for each slide.
+ * Hide all elements within .prevNext that are siblings of .testimonials and have a target.
+ */
+ .testimonials >s:target ~ .prevNext >* {visibility: hidden;}
 
-.testimonials >s:target ~ .prevNext >* {      visibility: hidden;}
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
-
-/* SLIDER ANIMATION POSITIONS */
-
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
-
-
-
+ /**
+  * Make the first child of .prevNext visible when the slide with id "s1" is targeted.
+  */
+ #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+ 
+ /**
+  * Make the second child of .prevNext visible when the slide with id "s2" is targeted.
+  */
+ #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+ 
+ /**
+  * Make the third child of .prevNext visible when the slide with id "s3" is targeted.
+  */
+ #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+ 
+ /**
+  * Make the fourth child of .prevNext visible when the slide with id "s4" is targeted.
+  */
+ #s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+ 
+ /**
+  * Define the animation positions for the slider.
+  * Translate the slider element horizontally to achieve the desired slide animation.
+  * Each slide is targeted based on its corresponding id value.
+  */
+ #s1:target ~ .slider {transform: translateX(0%);}
+ #s2:target ~ .slider {transform: translateX(-100%);}
+ #s3:target ~ .slider {transform: translateX(-200%);}
+ #s4:target ~ .slider {transform: translateX(-300%);}
+ 
+/**
+ * Style for the testimonial links.
+ */
 .testimonials a {
 	border-radius: 50%;
 	margin: 0 3px;
@@ -374,28 +645,42 @@ input[type="checkbox"] {
 	text-decoration: none;
 }
 
+/**
+ * Style for the testimonial content container.
+ */
 .testimonial-content {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
 
+/**
+ * Style for the testimonial image container.
+ */
 .testimonial-image {
   text-align: center;
   margin-top: 20px;
 }
 
+/**
+ * Style for the testimonial image.
+ */
 .testimonial-image img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
 
+/**
+ * Style for the social icons container.
+ */
 .social-icons {
   margin-top: 10px;
-
 }
 
+/**
+ * Style for individual social icons.
+ */
 .social-icon {
   margin-right: 5px;
 }
@@ -405,12 +690,19 @@ input[type="checkbox"] {
   height: auto;
 }
 
-
 /***********************************************************
   7. Footer
 ************************************************************/
 
-.footer {
+/**
+ * Style for the footer section.
+ * Set the position to relative, width to 100%,
+ * background color to #3586ff, minimum height to 100px,
+ * padding of 20px on the top and bottom, and 50px on the left and right.
+ * Display the content as a flex container with center alignment,
+ * and arrange items vertically in a column.
+ */
+ .footer {
   position: relative;
   width: 100%;
   background: #3586ff;
@@ -422,6 +714,12 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
+/**
+ * Style for the footer menu container.
+ * Set the position to relative, display as a flex container with center alignment,
+ * arrange items horizontally, and allow wrapping.
+ * Apply margin of 10px on the top and bottom.
+ */
 .footer-menu {
   position: relative;
   display: flex;
@@ -431,7 +729,14 @@ input[type="checkbox"] {
   flex-wrap: wrap;
 }
 
-
+/**
+ * Style for the links in the footer menu.
+ * Set the font size to 1.2rem, color to #fff,
+ * apply margin of 0 10px, display as inline-block,
+ * and specify a transition duration of 0.5s for hover effect.
+ * Set the text decoration to none, initial opacity to 0.75,
+ * and font weight to 300.
+ */
 .menu__link {
   font-size: 1.2rem;
   color: #fff;
@@ -443,10 +748,20 @@ input[type="checkbox"] {
   font-weight: 300;
 }
 
+/**
+ * Style for the hover effect on footer menu links.
+ * Increase the opacity to 1 on hover.
+ */
 .menu__link:hover {
   opacity: 1;
 }
 
+/**
+ * Style for paragraph elements within the footer.
+ * Set the color to #fff, apply margin of 15px on the top,
+ * and 10px on the bottom, font size to 1rem,
+ * and font weight to 300.
+ */
 .footer p {
   color: #fff;
   margin: 15px 0 10px 0;
@@ -454,6 +769,12 @@ input[type="checkbox"] {
   font-weight: 300;
 }
 
+/**
+ * Style for the wave image in the footer.
+ * Set the position to absolute, top to -100px, left to 0,
+ * width to 100%, height to 100px, and specify the background image.
+ * Set the background size to 1000px by 100px.
+ */
 .wave {
   position: absolute;
   top: -100px;
@@ -464,6 +785,11 @@ input[type="checkbox"] {
   background-size: 1000px 100px;
 }
 
+/**
+ * Style for the first wave image in the footer.
+ * Set the z-index to 1000, opacity to 1, bottom to 0,
+ * and apply animation to create a continuous wave effect.
+ */
 .wave#wave1 {
   z-index: 1000;
   opacity: 1;
@@ -471,6 +797,11 @@ input[type="checkbox"] {
   animation: animateWaves 4s linear infinite;
 }
 
+/**
+ * Style for the second wave image in the footer.
+ * Set the z-index to 999, opacity to 0.5, bottom to 10px,
+ * and apply animation to create a continuous wave effect.
+ */
 .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
@@ -478,6 +809,11 @@ input[type="checkbox"] {
   animation: animate 4s linear infinite !important;
 }
 
+/**
+ * Style for the third wave image in the footer.
+ * Set the z-index to 1000, opacity to 0.2, bottom to 15px,
+ * and apply animation to create a continuous wave effect.
+ */
 .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
@@ -485,6 +821,11 @@ input[type="checkbox"] {
   animation: animateWaves 3s linear infinite;
 }
 
+/**
+ * Style for the fourth wave image in the footer.
+ * Set the z-index to 999, opacity to 0.7, bottom to 20px,
+ * and apply animation to create a continuous wave effect.
+ */
 .wave#wave4 {
   z-index: 999;
   opacity: 0.7;
@@ -492,21 +833,29 @@ input[type="checkbox"] {
   animation: animate 3s linear infinite;
 }
 
+/**
+ * Keyframes for animating the wave background.
+ * Move the background image horizontally to create the wave effect.
+ */
 @keyframes animateWaves {
   0% {
     background-position-x: 1000px;
   }
   100% {
-    background-positon-x: 0px;
+    background-position-x: 0px;
   }
 }
 
+/**
+ * Keyframes for animating the wave background.
+ * Move the background image horizontally to create the wave effect.
+ */
 @keyframes animate {
   0% {
     background-position-x: -1000px;
   }
   100% {
-    background-positon-x: 0px;
+    background-position-x: 0px;
   }
 }
 
@@ -516,62 +865,118 @@ input[type="checkbox"] {
   8. Media Queries 
 ************************************************************/
 
-@media only screen and (max-width: 768px) {
+/**
+ * Media query for screens with a maximum width of 768px.
+ */
+ @media only screen and (max-width: 768px) {
 
+  /**
+   * Style for the navigation bar within the media query.
+   * Change the display to flex and align items and justify content to center.
+   */
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
+  /**
+   * Style for the unordered list within the navigation bar.
+   * Hide the unordered list within the media query.
+   */
   nav ul {
     display: none;
   }
 
+  /**
+   * Style for the menu icon within the media query.
+   * Change the display to flex and set the order to 3.
+   */
   .menu-icon {
     display: flex;
     order: 3;
   }
 
+  /**
+   * Style for the heading element within the hero section.
+   * Reduce the font size to 32px within the media query.
+   */
   .hero h1 {
     font-size: 32px;
   }
 
+  /**
+   * Style for the paragraph element within the hero section.
+   * Reduce the font size to 14px within the media query.
+   */
   .hero p {
     font-size: 14px;
   }
 
+  /**
+   * Style for the testimonial image within the media query.
+   * Center align the image and apply a top margin of 20px.
+   */
   .testimonial-image {
     text-align: center;
     margin-top: 20px;
   }
 
+  /**
+   * Style for the unordered list within the footer.
+   * Hide the unordered list within the media query.
+   */
   footer ul {
     display: none;
   }
 
+  /**
+   * Style for the social icons container within the media query.
+   * Center align the icons, apply a top margin of 10px,
+   * and increase the top margin to 20px.
+   */
   .social-icons {
     margin-top: 10px;
     text-align: center;
     margin-top: 20px;
   }
 
+  /**
+   * Style for the menu within the media query.
+   * Hide the menu and change the flex direction to column.
+   * Apply a top margin of 10px.
+   */
   .menu {
     display: none;
     flex-direction: column;
     margin-top: 10px;
   }
 
+  /**
+   * Style for the list items within the menu in the media query.
+   * Remove the left margin and apply a bottom margin of 10px.
+   */
   .menu li {
     margin-left: 0;
     margin-bottom: 10px;
   }
 
-
+  /**
+   * Style for the menu when the toggle is checked within the media query.
+   * Display the menu when the toggle is checked and the associated label is clicked.
+   */
   #menu-toggle:checked ~ .menu {
     display: flex;
   }
 
+  /**
+   * Style for the unordered list within the navigation bar in the media query.
+   * Display the unordered list as a column below the navigation bar.
+   * Set the position to absolute, top to 100%, left to 0,
+   * background color to #ffffff, apply padding of 10px,
+   * and set the flex direction to column.
+   * Adjust the width to 100% to take the full width of the screen.
+   */
   nav ul {
     display: flex;
     position: absolute;
@@ -583,20 +988,32 @@ input[type="checkbox"] {
     width: 100%; 
   }
 
-
+  /**
+   * Style for the logo within the media query.
+   * Set the order to 1 to change its position in the flex layout.
+   */
   .logo {
     order: 1;
   }
 
+  /**
+   * Style for the menu icon within the media query.
+   * Set the order to 3 to change its position in the flex layout.
+   */
   .menu-icon {
     order: 3;
   }
 
+  /**
+   * Style for the primary button within the media query.
+   * Set the order to 2 to change its position in the flex layout.
+   */
   .primary-button {
     order: 2;
   }
   
 }
+
 
 /***********************************************************
   9. References 
@@ -605,10 +1022,17 @@ input[type="checkbox"] {
 /**
 * 1. Ocean Footer: https://codepen.io/alvarotrigo/pen/GRxxWdQ
 * 2. Facebook icon created by
-     Hight Quality Icons: https://www.flaticon.com/free-icons/facebook
+      Hight Quality Icons: https://www.flaticon.com/free-icons/facebook
 * 3. Instagram logo icons created by
-     Laisa Islam Ani: https://www.flaticon.com/free-icons/instagram-logo
+      Laisa Islam Ani: https://www.flaticon.com/free-icons/instagram-logo
 * 4. Twitter logo icons created by
-     Md Tanvirul Haque: https://www.flaticon.com/free-icons/twitter-logo
-* 5.
+      Md Tanvirul Haque: https://www.flaticon.com/free-icons/twitter-logo
+* 5. Emojis used in the testimonial section:
+      https://googlefonts.github.io/noto-emoji-animation/
+* 6. Animated icons on sections 1 and 2: https://lordicon.com/icons/wired/flat
+* 7. Header Text Animation: https://codepen.io/alvarotrigo/pen/jOLgeqe
+* 8. Logo: https://avrasys.hu/logoipsum-logo-54.svg
+* 9. SlideShow for the testimonial section:
+      https://codepen.io/rokobuljan/pen/XXzqKQ   
+* 10. Favicon: https://www.flaticon.com/free-icon/         
 */
