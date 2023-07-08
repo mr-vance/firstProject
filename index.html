@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!--Head Start-->
 <head>
   <!-- Meta -->
   <meta charset="UTF-8">
@@ -22,232 +24,265 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!--Title-->
   <title>First Assignment</title>
+
+  <!--The following icon will appear on your browser tab-->
   <link rel="icon" type="image/x-icon" href="/images/one.ico">
 
 </head>
+<!--Head End-->
 
+<!--Body Start-->
 <body>
 
   <!-- Site Header Start -->
-  <header>
-    <nav> <!-- .navbar-nav -->
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-      </div>
-      <input type="checkbox" id="menu-toggle" class="side-menu">
-      <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <button class="primary-button">Login</button>
-    </nav> <!-- .navbar-nav -->
-  </header>
-  <!-- Site Header End -->
-
-
-
-  <!-- Hero Section Start -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="container">
-        <h1 class="title">
-          <span class="title-word title-word-1">We</span>
-          <span class="title-word title-word-2">develop</span>
-          <span class="title-word title-word-3">beautiful</span>
-          <span class="title-word title-word-4">software</span>
-        </h1>
-      </div>
-      <p>Laboris do minim adipisicing magna nulla quis laboris ex et consequat laboris.
-      </p>
-      <div class="buttons">
-        <button class="primary-button">About Us</button>
-        <button class="secondary-button">Our Portfolio</button>
-      </div>
+<header>
+  <nav> <!-- .navbar-nav -->
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
     </div>
-  </section>
-  <!-- Hero Section End -->
+    <input type="checkbox" id="menu-toggle" class="side-menu">
+    <label for="menu-toggle" class="menu-icon"> <!-- Hamburger icon for mobile screens -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li> <!-- Home link -->
+      <li><a href="#about">About</a></li> <!-- About link -->
+      <li><a href="#services">Services</a></li> <!-- Services link -->
+      <li><a href="#projects">Projects</a></li> <!-- Projects link -->
+      <li><a href="#testimonials-section">Testimonials</a></li> <!-- News link -->
+      <li><a href="#footer">Contact</a></li> <!-- Contact link -->
+    </ul>
+    <button class="primary-button">Login</button> <!-- Login button -->
+  </nav> <!-- .navbar-nav -->
+</header>
+<!-- Site Header End -->
+
+
+
+
+ <!-- Hero Section Start -->
+<section class="hero" id="about">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title">
+        <span class="title-word title-word-1">We</span> <!-- First word in the title -->
+        <span class="title-word title-word-2">develop</span> <!-- Second word in the title -->
+        <span class="title-word title-word-3">beautiful</span> <!-- Third word in the title -->
+        <span class="title-word title-word-4">software</span> <!-- Fourth word in the title -->
+      </h1>
+    </div>
+    <p>Laboris do minim adipisicing magna nulla quis laboris ex et consequat laboris.</p> <!-- Hero section description -->
+    <div class="buttons">
+      <button class="primary-button">About Us</button> <!-- About Us button -->
+      <button class="secondary-button">Our Portfolio</button> <!-- Our Portfolio button -->
+    </div>
+  </div>
+</section>
+<!-- Hero Section End -->
+
 
 
 
   <!-- Feature Content Section Start -->
-  <section class="feature" id="services">
-    <div class="feature-content">
-      <div class="card">
-        <img src="images/rest-api.gif" alt="Image 1">
-        <h3>Rest API</h3>
-        <p>Link up your apps easily</p>
-      </div>
-      <div class="card">
-        <img src="images/code.gif" alt="Image 2">
-        <h3>Web Apps</h3>
-        <p>Reach a wider audience</p>
-      </div>
-      <div class="card">
-        <img src="images/cli.gif" alt="Image 3">
-        <h3>Console Apps</h3>
-        <p>Local is convenient.</p>
-      </div>
+<section class="feature" id="services">
+  <div class="feature-content">
+    <div class="card">
+      <img src="images/rest-api.gif" alt="Image 1"> <!-- Image for Rest API -->
+      <h3>Rest API</h3> <!-- Title for Rest API -->
+      <p>Link up your apps easily</p> <!-- Description for Rest API -->
     </div>
-  </section>
-  <!-- Feature Content Section End -->
-
-
-
-  <!-- Section 1 Start -->
-  <section class="section1" id="projects">
-    <h2>Projects</h2>
-    <p>Cupidatat aliqua adipisicing commodo occaecat velit laborum anim nostrud consequat duis ut et aliqua eu.</p>
-    <div class="cards">
-      <div class="card">
-        <img src="images/chart.gif" alt="Image 4">
-        <h3>first project</h3>
-        <p>e-commerce website</p>
-        <button class="secondary-button">View</button>
-      </div>
-      <div class="card">
-        <img src="images/home.gif" alt="Image 5">
-        <h3>second project</h3>
-        <p>tutors web application</p>
-        <button class="secondary-button">View</button>
-      </div>
-      <div class="card">
-        <img src="images/consult.gif" alt="Image 6">
-        <h3>third project</h3>
-        <p>social mobile app</p>
-        <button class="secondary-button">View</button>
-      </div>
-      <div class="card">
-        <img src="images/mail.gif" alt="Image 7">
-        <h3>fourth project</h3>
-        <p>emailing web client</p>
-        <button class="secondary-button">View</button>
-      </div>
+    <div class="card">
+      <img src="images/code.gif" alt="Image 2"> <!-- Image for Web Apps -->
+      <h3>Web Apps</h3> <!-- Title for Web Apps -->
+      <p>Reach a wider audience</p> <!-- Description for Web Apps -->
     </div>
-  </section>
-  <!-- Section 1 End -->
+    <div class="card">
+      <img src="images/cli.gif" alt="Image 3"> <!-- Image for Console Apps -->
+      <h3>Console Apps</h3> <!-- Title for Console Apps -->
+      <p>Local is convenient.</p> <!-- Description for Console Apps -->
+    </div>
+  </div>
+</section>
+<!-- Feature Content Section End -->
 
-  <section class="section2" id="projects">
+
+
+<!-- Section 1 Start -->
+<section class="section1" id="projects">
+  <h2>Projects</h2> <!-- Section title -->
+  <p>Cupidatat aliqua adipisicing commodo occaecat velit laborum anim nostrud consequat duis ut et aliqua eu.</p> <!-- Section description -->
+  <div class="cards">
+    <div class="card">
+      <img src="images/chart.gif" alt="Image 4"> <!-- Image for first project -->
+      <h3>first project</h3> <!-- Title for first project -->
+      <p>e-commerce website</p> <!-- Description for first project -->
+      <button class="secondary-button">View</button> <!-- View button for first project -->
+    </div>
+    <div class="card">
+      <img src="images/home.gif" alt="Image 5"> <!-- Image for second project -->
+      <h3>second project</h3> <!-- Title for second project -->
+      <p>tutors web application</p> <!-- Description for second project -->
+      <button class="secondary-button">View</button> <!-- View button for second project -->
+    </div>
+    <div class="card">
+      <img src="images/consult.gif" alt="Image 6"> <!-- Image for third project -->
+      <h3>third project</h3> <!-- Title for third project -->
+      <p>social mobile app</p> <!-- Description for third project -->
+      <button class="secondary-button">View</button> <!-- View button for third project -->
+    </div>
+    <div class="card">
+      <img src="images/mail.gif" alt="Image 7"> <!-- Image for fourth project -->
+      <h3>fourth project</h3> <!-- Title for fourth project -->
+      <p>emailing web client</p> <!-- Description for fourth project -->
+      <button class="secondary-button">View</button> <!-- View button for fourth project -->
+    </div>
+  </div>
+</section>
+<!-- Section 1 End -->
+
+<!--Section 2 Start: Testimonials-->
+<section class="section2" id="testimonials-section">
   <div class="testimonials">
 
     <!-- Don't wrap targets in parent -->
-    <s id="s1"></s> 
-    <s id="s2"></s>
-    <s id="s3"></s>
-    <s id="s4"></s>
-  
-    <div class="slider">      
-        <div class="testimonial slide" id="s1">
-          <div class="testimonial-content">
-            <h2 class="client-name">First</h2>
-            <p class="client-role">CEO, Example Company</p>
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p>
-          </div>
-          <div class="testimonial-image">
-            <img src="images/shh.gif" alt="John Doe">
-            <div class="social-icons">
-              <a href="#" class="social-icon"><img src="images/facebook.png"></a>
-              <a href="#" class="social-icon"><img src="images/instagram.png"></a>
-              <a href="#" class="social-icon"><img src="images/twitter.png"></a>
-            </div>
+    <s id="s1"></s> <!-- Testimonial slide 1 -->
+    <s id="s2"></s> <!-- Testimonial slide 2 -->
+    <s id="s3"></s> <!-- Testimonial slide 3 -->
+    <s id="s4"></s> <!-- Testimonial slide 4 -->
+
+
+    <!--Sliders Container Start-->
+    <div class="slider">
+
+       <!--Slide 1 Start-->
+      <div class="testimonial slide" id="s1">
+        <div class="testimonial-content">
+          <h2 class="client-name">First</h2> <!-- Name of the first client -->
+          <p class="client-role">CEO, Example Company</p> <!-- Role of the first client -->
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p> <!-- Testimonial text for the first client -->
+        </div>
+        <div class="testimonial-image">
+          <img src="images/shh.gif" alt="John Doe"> <!-- Image for the first client -->
+          <div class="social-icons">
+            <a href="#" class="social-icon"><img src="images/facebook.png"></a>
+            <a href="#" class="social-icon"><img src="images/instagram.png"></a>
+            <a href="#" class="social-icon"><img src="images/twitter.png"></a>
           </div>
         </div>
-        <div class="testimonial slide" id="s2">
-          <div class="testimonial-content">
-            <h2 class="client-name">Second</h2>
-            <p class="client-role">CEO, Example Company</p>
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p>
-          </div>
-          <div class="testimonial-image">
-            <img src="images/grin.gif" alt="John Doe">
-                      <div class="social-icons">
-      <a href="#" class="social-icon"><img src="images/facebook.png"></a>
-      <a href="#" class="social-icon"><img src="images/instagram.png"></a>
-      <a href="#" class="social-icon"><img src="images/twitter.png"></a>
-          </div>
+      </div>
+       <!--Slide 1 End-->
+
+
+
+       <!--Slide 2 Start-->
+      <div class="testimonial slide" id="s2">
+        <div class="testimonial-content">
+          <h2 class="client-name">Second</h2> <!-- Name of the second client -->
+          <p class="client-role">CEO, Example Company</p> <!-- Role of the second client -->
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p> <!-- Testimonial text for the second client -->
+        </div>
+        <div class="testimonial-image">
+          <img src="images/grin.gif" alt="John Doe"> <!-- Image for the second client -->
+          <div class="social-icons">
+            <a href="#" class="social-icon"><img src="images/facebook.png"></a>
+            <a href="#" class="social-icon"><img src="images/instagram.png"></a>
+            <a href="#" class="social-icon"><img src="images/twitter.png"></a>
           </div>
         </div>
-        <div class="testimonial slide" id="s3">
-          <div class="testimonial-content">
-            <h2 class="client-name">Third</h2>
-            <p class="client-role">CEO, Example Company</p>
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p>
-          </div>
-          <div class="testimonial-image">
-            <img src="images/shades.gif" alt="John Doe">
-            <div class="social-icons">
-              <a href="#" class="social-icon"><img src="images/facebook.png"></a>
-              <a href="#" class="social-icon"><img src="images/instagram.png"></a>
-              <a href="#" class="social-icon"><img src="images/twitter.png"></a>
-            </div>
+      </div>
+       <!--Slide 2 End-->
+
+
+
+       <!--Slide 3 Start-->
+      <div class="testimonial slide" id="s3">
+        <div class="testimonial-content">
+          <h2 class="client-name">Third</h2> <!-- Name of the third client -->
+          <p class="client-role">CEO, Example Company</p> <!-- Role of the third client -->
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p> <!-- Testimonial text for the third client -->
+        </div>
+        <div class="testimonial-image">
+          <img src="images/shades.gif" alt="John Doe"> <!-- Image for the third client -->
+          <div class="social-icons">
+            <a href="#" class="social-icon"><img src="images/facebook.png"></a>
+            <a href="#" class="social-icon"><img src="images/instagram.png"></a>
+            <a href="#" class="social-icon"><img src="images/twitter.png"></a>
           </div>
         </div>
-        <div class="testimonial slide" id="s4">
-          <div class="testimonial-content">
-            <h2 class="client-name">Fourth and Last</h2>
-            <p class="client-role">CEO, Example Company</p>
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p>
-          </div>
-          <div class="testimonial-image">
-            <img src="images/wink.gif" alt="John Doe">
-            <div class="social-icons">
-              <a href="#" class="social-icon"><img src="images/facebook.png"></a>
-              <a href="#" class="social-icon"><img src="images/instagram.png"></a>
-              <a href="#" class="social-icon"><img src="images/twitter.png"></a>
-            </div>
+      </div>
+       <!--Slide 3 End-->
+
+
+
+      <!--Slide 4 Start-->
+      <div class="testimonial slide" id="s4">
+        <div class="testimonial-content">
+          <h2 class="client-name">Fourth and Last</h2> <!-- Name of the fourth client -->
+          <p class="client-role">CEO, Example Company</p> <!-- Role of the fourth client -->
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum metus eget ligula scelerisque, sit amet ullamcorper lacus dapibus. Proin pulvinar dolor at lectus semper, a ultrices mauris accumsan.</p> <!-- Testimonial text for the fourth client -->
+        </div>
+        <div class="testimonial-image">
+          <img src="images/wink.gif" alt="John Doe"> <!-- Image for the fourth client -->
+          <div class="social-icons">
+            <a href="#" class="social-icon"><img src="images/facebook.png"></a>
+            <a href="#" class="social-icon"><img src="images/instagram.png"></a>
+            <a href="#" class="social-icon"><img src="images/twitter.png"></a>
           </div>
         </div>
+      </div>
+     <!--Slide 4 End-->
+
+
     </div>
-    
+    <!--Sliders Container End-->
+
+
     <div class="prevNext">
-      <div><a href="#s4"></a><a href="#s2"></a></div>
-      <div><a href="#s1"></a><a href="#s3"></a></div>
-      <div><a href="#s2"></a><a href="#s4"></a></div>
-      <div><a href="#s3"></a><a href="#s1"></a></div>
+      <div><a href="#s4"></a><a href="#s2"></a></div> <!-- Navigation for previous and next testimonials -->
+      <div><a href="#s1"></a><a href="#s3"></a></div> <!-- Navigation for previous and next testimonials -->
+      <div><a href="#s2"></a><a href="#s4"></a></div> <!-- Navigation for previous and next testimonials -->
+      <div><a href="#s3"></a><a href="#s1"></a></div> <!-- Navigation for previous and next testimonials -->
     </div>
-  
+
   </div>
-  <br><br><br><br>
-  <!-- partial -->
-</section> 
-  
+  <br><br><br><br> <!--Stupid way of keeping the social icons from drowning in the ocean below them-->
+</section>
+<!--Section 2 End: Testimonials-->
 
 <!-- Footer Start -->
-  <footer class="footer">
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div>
+<footer class="footer" id="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div> <!-- First wave -->
+    <div class="wave" id="wave2"></div> <!-- Second wave -->
+    <div class="wave" id="wave3"></div> <!-- Third wave -->
+    <div class="wave" id="wave4"></div> <!-- Fourth wave -->
+  </div>
 
-    <ul class="footer-menu">
-      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-    </ul>
+  <ul class="footer-menu">
+    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li> <!-- Home link -->
+    <li class="menu__item"><a class="menu__link" href="#about">About</a></li> <!-- About link -->
+    <li class="menu__item"><a class="menu__link" href="#services">Services</a></li> <!-- Services link -->
+    <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li> <!-- Team link -->
+    <li class="menu__item"><a class="menu__link" href="#testimonials-section">Testimonials</a></li> <!-- Team link -->
+    <li class="menu__item"><a class="menu__link" href="#footer">Contact</a></li> <!-- Contact link -->
+  </ul>
 
-    <div class="social-icons">
-      <a href="#" class="social-icon"><img src="images/facebook.png"></a>
-      <a href="#" class="social-icon"><img src="images/instagram.png"></a>
-      <a href="#" class="social-icon"><img src="images/twitter.png"></a>
-    </div>
+  <div class="social-icons">
+    <a href="#" class="social-icon"><img src="images/facebook.png"></a> <!-- Facebook icon -->
+    <a href="#" class="social-icon"><img src="images/instagram.png"></a> <!-- Instagram icon -->
+    <a href="#" class="social-icon"><img src="images/twitter.png"></a> <!-- Twitter icon -->
+  </div>
 
-    <p>&copy;2023 Vance Muchongo</p>
+  <p>&copy;2023 Vance Muchongo</p> <!-- Copyright information -->
 </footer>
 <!-- Footer End -->
 
-
 </body>
+<!--Body End-->
+
 </html>
+
