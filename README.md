@@ -9,6 +9,8 @@
   <img src="https://i.imgur.com/gjSlBfx.gif" width="150" height="150">
 </p>
 
+You can find the documentation of this project [here](https://github.com/mr-vance/firstAssignment/wiki)
+
 
 HTML and CSS are fundamental languages for front-end development. HTML provides the structure and semantic markup for web content, while CSS controls the presentation and styling. They are essential for creating visually appealing, responsive, and accessible web pages, enabling developers to craft engaging user experiences and bring designs to life on the web. Without HTML and CSS, front-end development would be incomplete, as they form the backbone of every website and lay the foundation for other technologies and frameworks to build upon.
 
