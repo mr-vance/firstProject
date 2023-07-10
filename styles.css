@@ -4,7 +4,7 @@
  * Author: Vance Muchongo
  * Author Url: https://vance-muchongo.web.app
  * Initial Release: July 08, 2023
- * Last Update: [TBC]
+ * Last Update: July 10, 2023
  * 
  */
 /* 
@@ -998,13 +998,6 @@ input[type="checkbox"] {
     order: 1;
   }
 
-  /**
-   * Style for the menu icon within the media query.
-   * Set the order to 3 to change its position in the flex layout.
-   */
-  .menu-icon {
-    order: 3;
-  }
 
   /**
    * Style for the primary button within the media query.
